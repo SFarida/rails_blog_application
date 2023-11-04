@@ -1,30 +1,21 @@
-# README
 <a name="readme-top"></a>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 <div align="center">
 
-Things you may want to cover:
   <img src="https://user-images.githubusercontent.com/65084923/231513445-05c342c5-a239-46b8-bcb8-78d3cd89421d.png" alt="logo" width="100"  height="auto" />
   <img src="https://user-images.githubusercontent.com/65084923/231513552-358a0a7b-a152-4f5b-806e-c8a09f2c269b.png" alt="logo" width="100"  height="auto" />
   <br/>
   <img src="https://user-images.githubusercontent.com/65084923/220200035-01fa5e08-af6a-495b-b597-55157a2b7d95.gif" alt="logo" />
   <br/>
 
-* Ruby version
-<h3><b>Rails Blog App </b></h3>
+<h3><b>Rails Blog Application </b></h3>
 
-* System dependencies
 </div>
 
-* Configuration
 # 📗 Table of Contents
 
-* Database creation
 - [📖 About the Project](#about-project)
 
-* Database initialization
     - [🛠 Built With](#built-with)
         - [Tech Stack](#tech-stack)
         - [Key Features](#key-features)
@@ -40,15 +31,12 @@ Things you may want to cover:
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-* How to run the test suite
-# 📖 Rails Blog Application
+# 📖 Blog App
 
-* Services (job queues, cache servers, search engines, etc.)
 > Rails Blog App was developed with Rails.
-* Deployment instructions
+
 ## 🛠 Built With <a name="built-with"></a>
 
-* ...
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
@@ -132,7 +120,7 @@ To run the project, execute the following command:
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
-Feel free to check the [issues page](https://github.com/SFarida/blog-app/issues).
+Feel free to check the [issues page](https://github.com/SFarida/rails_blog_application/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -160,3 +148,5 @@ I would like to thank Microverse
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
