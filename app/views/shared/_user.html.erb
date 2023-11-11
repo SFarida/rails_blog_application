@@ -1,0 +1,9 @@
+<li class="list-group-item border-0">
+    <%= link_to user_path(user), class: "d-flex flex-wrap my-2" do %>
+        <img src="<%= user.photo %>" alt="avatar" class="border border-black me-2 mt-2">
+        <div class="border border-black p-2 mt-2 flex-grow-1">
+            <h4><%= user.name %></h4>
+            <p class="text-end">Number of posts: <%= user.posts_counter %></p>
+        </div>
+    <% end %>
+</li>
