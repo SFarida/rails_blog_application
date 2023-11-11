@@ -5,11 +5,13 @@
 
     <div>
         <% @posts.each do |post| %>
-            <%= link_to user_post_path(user_id: post.author.id, id: post.id), class: "my-4" do %>
+            <div class="mb-5 posts_comments">
+            <%= link_to user_post_path(user_id: post.author.id, id: post.id), class: "" do %>
                 <%= render "shared/post", post: post %>
             <% end %>
-            <div>
+            <div class="card">
                 <%= render "shared/comment", post: post %>
+            </div>
             </div>
         <% end %>
     </div>

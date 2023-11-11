@@ -1,0 +1,19 @@
+<section class="container mt-3">
+    <div>
+        <h1>New Post</h1>
+    </div>
+    <%= form_with model: @post, url: user_posts_path, local: true, class: "form" do |form| %>
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" name="title" class="form-control" id="title" placeholder="Post title" required>
+        </div>
+        <div class="mb-3">
+            <label for="text" class="form-label">Text</label>
+            <textarea name="text" class="form-control" id="text" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-outline-dark">Submit</button>
+    <% end %>
+    <div class="d-flex justify-content-center">
+        <%=link_to 'All posts', user_posts_path %>
+    </div>
+</section>

@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+.posts_comments :hover {
+  box-shadow: 1px 1px 4px grey;
+  border: 0.5px black;
+}
