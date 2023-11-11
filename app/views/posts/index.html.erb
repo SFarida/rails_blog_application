@@ -1,1 +1,20 @@
-<h1>Post Index Works</h1>
+<section class="container-fluid mt-3">
+    <ul class="list-group my-1">
+        <%= render "shared/user", user: @user %>
+    </ul>
+
+    <div>
+        <% @posts.each do |post| %>
+            <%= link_to user_post_path(user_id: post.author.id, id: post.id), class: "my-4" do %>
+                <%= render "shared/post", post: post %>
+            <% end %>
+            <div>
+                <%= render "shared/comment", post: post %>
+            </div>
+        <% end %>
+    </div>
+
+    <div class="d-flex justify-content-center my-2">
+        <button type="button" class="btn btn-outline-dark">Pagination</button>
+    </div>
+</section>

@@ -1,1 +1,5 @@
-<h1>User Index Works</h1>
+<section class="container-fluid mt-3">
+    <ul class="list-group">
+        <%= render partial: "shared/user", collection: @users, as: :user %>
+    </ul>
+</section>

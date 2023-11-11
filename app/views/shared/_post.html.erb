@@ -1,0 +1,12 @@
+<li class="list-group-item my-2">
+    <div class="card border border-black">
+        <div class="card-body">
+            <h5 class="card-title"><%= post.title %></h5>
+            <p class="card-text"><%= truncate(post.text, length: 150, omission: "...") %></p>
+            <div class="d-flex justify-content-end flex-wrap">
+                <p class="card-text pe-3">Comments: <%= post.comments_counter %></p>
+                <p class="card-text pe-3">Likes: <%= post.likes_counter %></p>
+            </div>
+        </div>
+    </div>
+</li>

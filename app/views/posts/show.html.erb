@@ -1,1 +1,19 @@
-<h1>Post Show Works</h1>
+<section class="container-fluid mt-3">
+    <div class="card border border-black">
+        <div class"card-body">
+            <div class="card-title d-flex justify-content-between">
+                <h5 class="card-title"><%= @post.title %> by <%= @post.author.name %></h5>
+                <h6 class="card-title">
+                    <small class="d-flex flex-wrap">
+                        <span class="card-title pe-3">Comments: <%= @post.comments_counter %></span>
+                        <span class="card-title pe-3">Likes: <%= @post.likes_counter %></span>
+                    </small>
+                </h6>
+            </div>
+            <p class="card-text"><%= @post.text %></p>
+        </div>
+    </div>
+    <div class="card border border-black">
+        <%= render "shared/comment", post: @post %>
+    </div>
+</section> 
