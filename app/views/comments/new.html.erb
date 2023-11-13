@@ -1,0 +1,14 @@
+<section class="container mt-3">
+    <div>
+        <h1>New Comment</h1>
+    </div>
+  <%= form_with model: @comment, url: user_post_comments_path, class: "form", local: true do |form| %>
+    <div class="mb-3">
+        <label for="text" class="form-label">Text</label>
+        <textarea name="text" class="form-control" id="text" rows="3" required></textarea>
+    </div>
+    <div>
+        <button type="submit" class="btn btn-outline-dark">Submit</button>
+    </div>
+  <% end %>
+</section>
