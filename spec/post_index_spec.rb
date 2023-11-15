@@ -12,7 +12,7 @@ RSpec.describe 'posts/index', type: :feature do
     visit user_posts_path(@user.id, @first_post)
   end
 
-  it 'displays post text' do
+  it 'displays post body' do
     expect(page).to have_content('This is my first post')
   end
 
@@ -46,5 +46,10 @@ RSpec.describe 'posts/index', type: :feature do
 
   it 'displays user photo' do
     expect(page).to have_css("img[src*='https://unsplash.com/photos/F_-0BxGuVvo']")
+  end
+
+  it 'Redirects to the post show page when you click on a post' do
+    visit user_post_path(user_id: @user.id, id: @first_post.id)
+    expect(page).to have_current_path(user_post_path(user_id: @user.id, id: @first_post.id))
   end
 end
