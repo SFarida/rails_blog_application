@@ -49,7 +49,9 @@ RSpec.describe 'posts/index', type: :feature do
   end
 
   it 'Redirects to the post show page when you click on a post' do
-    visit user_post_path(user_id: @user.id, id: @first_post.id)
+    visit user_posts_path(user_id: @user.id)
+    expect(page).to have_link(@first_post.title, href: user_post_path(user_id: @user.id, id: @first_post.id))
+    click_link @first_post.title
     expect(page).to have_current_path(user_post_path(user_id: @user.id, id: @first_post.id))
   end
 end
