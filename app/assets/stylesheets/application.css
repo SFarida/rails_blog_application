@@ -17,3 +17,22 @@
   box-shadow: 1px 1px 4px grey;
   border: 0.5px black;
 }
+.auth_container {
+  height: 100vh;
+  max-width: 80%;
+}
+
+.field_input input {
+  width: 100%;
+  border-block-color: black;
+}
+
+.submit input {
+  width: 100%;
+  border-block-color: black;
+  box-shadow: 0 4px 2px -2px black;
+}
+
+.auth_container h2 {
+  text-align: center;
+}
